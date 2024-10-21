@@ -1,0 +1,131 @@
+/* Style for the student home page container */
+.student-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for centering */
+    background: linear-gradient(to bottom right, #f0f4f8, #e0e7ed);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background 0.5s ease;
+    position: relative; /* Added for the border effect */
+}
+
+.student-home:hover {
+    background: linear-gradient(to bottom right, #e0e7ed, #d0dae1);
+}
+
+/* Welcome heading style */
+.student-home h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.student-home h2:hover {
+    color: #4caf50;
+}
+
+/* Exam list container style */
+.exam-list-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Exam list style */
+.student-home ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.student-home li {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+
+.student-home li:hover {
+    transform: translateY(-2px);
+}
+
+/* Link styles */
+.student-home a {
+    text-decoration: none;
+    color: #2196f3;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.student-home a:hover {
+    color: #1976d2;
+    text-decoration: underline;
+}
+
+/* Call-to-action button styles */
+.student-home .cta-button {
+    padding: 12px 30px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.student-home .cta-button:hover {
+    background-color: #1976d2;
+    transform: translateY(-3px);
+}
+
+.student-home .cta-button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .student-home {
+        padding: 10px;
+    }
+
+    .student-home h2 {
+        font-size: 2rem;
+    }
+
+    .student-home .cta-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Additional styles for a polished look */
+
+/* Subtle border effect for the container */
+.student-home::before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    border: 2px dashed rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    pointer-events: none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Including Chart.js library -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Real-Time Data Analytics Dashboard</h1>
+        <div class="dashboard-section" id="student-performance">
+            <h2>Student Performance</h2>
+            <canvas id="performanceChart"></canvas>
+        </div>
+
+        <div class="dashboard-section" id="violation-stats">
+            <h2>Violation Statistics</h2>
+            <canvas id="violationChart"></canvas>
+        </div>
+
+        <div class="dashboard-section" id="engagement-levels">
+            <h2>Engagement Levels</h2>
+            <canvas id="engagementChart"></canvas>
+        </div>
+
+        <div class="dashboard-section" id="cheating-predictions">
+            <h2>Possible Cheating Patterns</h2>
+            <div id="cheating-prediction-output">Analyzing...</div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
